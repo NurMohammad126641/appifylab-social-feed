@@ -1,0 +1,15 @@
+services:
+  - type: web
+    runtime: node
+    name: appifylab-social-feed
+    plan: free
+    autoDeploy: true
+    buildCommand: npm install && npm run build
+    startCommand: npm run start:render
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: DATABASE_URL
+        value: file:./render-demo.db
+      - key: AUTH_SECRET
+        generateValue: true

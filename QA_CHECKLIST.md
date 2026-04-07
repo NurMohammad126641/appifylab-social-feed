@@ -1,0 +1,30 @@
+# QA Checklist
+
+- `npm install` completes
+- `npm run db:setup` completes
+- `npm run lint` passes
+- `npm run typecheck` passes
+- `npm run build` passes
+- `npm run dev` starts successfully
+- Logged-out `/feed` redirects to `/login`
+- Registration works
+- Login works
+- Logout works
+- Seeded demo accounts work
+- Public post creation works
+- Private post creation works
+- Private posts are author-only
+- Public posts are visible to other users
+- Image upload works
+- Posts are newest-first
+- Post like/unlike works
+- Comment creation works
+- Reply creation works
+- Comment like/unlike works
+- Reply like/unlike works
+- Liked-by viewers open and show users
+- Validation errors are sensible
+- Key assets load correctly
+- README and HANDOFF are reviewer-friendly
+- `.env.example` is complete
+- No secrets or local junk are tracked
